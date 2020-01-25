@@ -123,14 +123,15 @@ export default class Profile extends React.Component {
                         <TouchableOpacity
                             style={{
                                 alignSelf: 'center',
-                                backgroundColor: '#fff',
+                                backgroundColor: '#6a8caf',
                                 width: 140,
                                 padding: 8,
                                 marginTop: 16,
                                 borderRadius: 30,
+                                
                             }}
                             onPress={() => this._confirmLogout()}>
-                            <Text style={[ styles.text_font, { alignSelf: 'center', color: '#6a8caf', }]}>
+                            <Text style={[ styles.text_font, { alignSelf: 'center', color: '#fff', }]}>
                                 ลงชื่อออก
                             </Text>
                         </TouchableOpacity>
@@ -159,8 +160,8 @@ const styles = StyleSheet.create({
         marginTop: 28,
         marginBottom: 28,
         alignSelf: 'center', 
-        backgroundColor: '#e1f2fb',
-        borderRadius: 60
+        backgroundColor: '#6a8caf',
+        borderRadius: 60,
     },
     profile_image: {
         width: 100, 

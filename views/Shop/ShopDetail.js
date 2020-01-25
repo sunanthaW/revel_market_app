@@ -75,8 +75,8 @@ export class ShopDetail extends React.Component {
                             source={{ uri: GOBALS.URL + this.state.shop.shop_image_name }} 
                             style={{ height: 280, justifyContent: "flex-end", }}
                         >
-                            <View style={{ height: 64, padding: 18, justifyContent: "center", backgroundColor: 'rgba(255, 255, 255, 0.3)', }}>
-                                <Text numberOfLines={1} style={[ styles.text_font, { fontSize: 20, color: '#010001', }]}>{this.state.shop.shop_name}</Text>
+                            <View style={{ height: 64, padding: 18, justifyContent: "center", backgroundColor: 'rgba(0, 0, 0, 0.7)', }}>
+                                <Text numberOfLines={1} style={[ styles.text_font, { fontSize: 20, color: '#fff', }]}>{this.state.shop.shop_name}</Text>
                             </View>
                         </ImageBackground>
                         {this.state.shop.shop_description != '' ? 
@@ -113,7 +113,7 @@ export class ShopDetail extends React.Component {
         }
 
         return (
-            <ScrollView style={{ backgroundColor: '#010001', }}>
+            <ScrollView style={{ backgroundColor: '#e9b2bc', }}>
                 <StatusBar hidden={true} />
                 {display_data}
             </ScrollView>
