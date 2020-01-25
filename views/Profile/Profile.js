@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     Alert,
+    AsyncStorage,
     Image, 
     StyleSheet, 
     ScrollView,
@@ -61,7 +62,9 @@ export default class Profile extends React.Component {
     }
 
     _logOut() {
-
+        AsyncStorage.removeItem('user_data').then(() => {
+            this.props.navigation.navigate('Login')
+        });
     }
 
     render() { 
