@@ -98,8 +98,8 @@ export default class Shop extends React.Component {
         } 
 
         return (                
-            <Content style={{ backgroundColor: '#010001', }}>
-                <Header style={{ backgroundColor: '#010001', }}>
+            <Content style={{ backgroundColor: '#F5B7B1', }}>
+                <Header style={{ backgroundColor: '#F5B7B1', }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 
