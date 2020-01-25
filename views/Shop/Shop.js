@@ -98,8 +98,8 @@ export default class Shop extends React.Component {
         } 
 
         return (                
-            <Content style={{ backgroundColor: '#F5B7B1', }}>
-                <Header style={{ backgroundColor: '#F5B7B1', }}>
+            <Content style={{ backgroundColor: '#f3dfe3', }}>
+                <Header style={{ backgroundColor: '#e9b2bc', }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 
@@ -109,10 +109,10 @@ export default class Shop extends React.Component {
                     </ImageBackground>
                 </Header>
                 <View style={{ padding: 12, }}>
-                    <View style={[{ height: 48, backgroundColor: '#474648', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
+                    <View style={[{ height: 48, backgroundColor: '#f1f9f9', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
                         <TextInput style={[ styles.text_font, { flex: 1, paddingLeft: 18, }]}
                             placeholder="What are you looking for ?" 
-                            placeholderTextColor="#979697"
+                            placeholderTextColor="#001001"
                             underlineColorAndroid="transparent"
                             onChangeText={(keyword) => { this.setState({ keyword }) }}
                             value={this.state.keyword} 

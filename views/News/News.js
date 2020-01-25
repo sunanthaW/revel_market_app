@@ -79,7 +79,7 @@ export default class News extends React.Component {
                     display_data.push(
                         <View style={[ { flex: 1, flexDirection: 'row', padding: 12 }]}>
                             <View style={{ flex: 1, flexDirection: 'column', }} >
-                                <TouchableOpacity onPress={() => this.props.navigation.navigate('NewsDetail',{ news_code: this.state.news[i].news_code }) }>
+                                <TouchableOpacity onPress={() => this.props.navigation.navigate('NewsDetailTest',{ news_code: this.state.news[i].news_code }) }>
                                     <Image 
                                         resizeMode="cover" 
                                         source={{ uri: GOBALS.URL + this.state.news[i].news_image_name }} 
@@ -90,7 +90,7 @@ export default class News extends React.Component {
                             <View style={{ flex: 1, flexDirection: 'column', paddingLeft: 10 }} >
                                 <Text style={[ styles.text_font, { fontSize: 18, color: '#ff9900', }]} numberOfLines={1}>{this.state.news[i].news_title}</Text>
                                 <Text style={[ styles.text_font, { fontSize: 12, color: 'gray', }]}>{this.state.news[i].news_date}</Text>
-                                <Text style={[ styles.text_font, { fontSize: 14, } ]} numberOfLines={4}>{this.state.news[i].news_description}</Text>
+                                <Text style={[ styles.text_font, { fontSize: 14, color: '#ec7373',} ]} numberOfLines={4}>{this.state.news[i].news_description}</Text>
                             </View>
                         </View>
                     )
@@ -99,8 +99,8 @@ export default class News extends React.Component {
         }
 
         return (
-            <Content style={{ backgroundColor: '#010001', }}>
-                <Header style={{ backgroundColor: '#010001' }}>
+            <Content style={{ backgroundColor: '#f3dfe3', }}>
+                <Header style={{ backgroundColor: '#e9b2bc' }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 
